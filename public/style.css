@@ -53,3 +53,7 @@ footer.site .wrap{padding-top:22px;padding-bottom:30px}
   body{font-size:17px}.lcd h1{font-size:2.1rem}
   dl.facts{grid-template-columns:1fr}dl.facts dt{border-bottom:0;padding-bottom:2px}
 }
+.scroll{overflow-x:auto;margin:0 0 1.2em}
+table.ref{width:100%;border-collapse:collapse;background:var(--paper);border:2px solid var(--ink);font:15px var(--sans)}
+table.ref th,table.ref td{padding:8px 10px;border-bottom:1px solid var(--dot);text-align:left}
+table.ref th{background:var(--panel);font-family:var(--mono)}
