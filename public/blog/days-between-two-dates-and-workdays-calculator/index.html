@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Why I built a date difference tool into Orbitika: days between dates and workdays</title>
+<meta name="description" content="Why I built a date difference tool into Orbitika: count days between two dates or Monday-to-Friday workdays, with examples, honest limits and tips.">
+<link rel="canonical" href="https://orbitika.app/blog/days-between-two-dates-and-workdays-calculator/">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<meta property="og:title" content="Why I built a date difference tool into Orbitika: days between dates and workdays">
+<meta property="og:description" content="Why I built a date difference tool into Orbitika: count days between two dates or Monday-to-Friday workdays, with examples, honest limits and tips.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://orbitika.app/blog/days-between-two-dates-and-workdays-calculator/">
+<meta name="twitter:card" content="summary">
+<link rel="stylesheet" href="/style.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Why I built a date difference tool into Orbitika: days between dates and workdays", "datePublished": "2026-10-24", "dateModified": "2026-10-24", "author": {"@type": "Person", "name": "Orbitika developer"}, "mainEntityOfPage": "https://orbitika.app/blog/days-between-two-dates-and-workdays-calculator/"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "How do I count the days between two dates?", "acceptedAnswer": {"@type": "Answer", "text": "Pick the two dates in Orbitika's Date Difference tool and tap Calculate. It shows the number of days between them, and can count Monday-to-Friday workdays only."}}, {"@type": "Question", "name": "Does the tool count public holidays?", "acceptedAnswer": {"@type": "Answer", "text": "No. Workdays means Monday to Friday. Public holidays are not subtracted, so check them in the Calendar and take them off yourself."}}, {"@type": "Question", "name": "Does it work offline?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. It is designed to work without Wi-Fi or mobile data."}}, {"@type": "Question", "name": "Is Orbitika's Date Difference tool free?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. It is one of the free everyday tools. Only the emergency tools are part of Orbitika Premium."}}]}</script>
+</head>
+<body>
+<header class="site"><div class="wrap">
+<a class="brand" href="/">Orbitika</a>
+<nav><a href="/orbitika/">About the app</a><a href="/blog/">Blog</a></nav>
+</div></header>
+<main class="wrap">
+
+<article>
+<h1>Why I built a date difference tool into Orbitika: days between dates and workdays</h1>
+<p class="meta">24 October 2026 &middot; by the developer of Orbitika</p>
+<div class="answer"><p><strong>Short answer:</strong> I built Orbitika's Date Difference tool so you can pick two dates and instantly see how many days are between them, or how many Monday-to-Friday workdays. It works without Wi-Fi or mobile data, and it does not subtract public holidays.</p></div>
+
+<h2>Why I built it</h2>
+<p>Counting days between two dates sounds easy until you try it. Months have different lengths, leap years add a day, and "how many working days is that?" means stopping every weekend. Most people end up counting on a calendar with a finger, and a small slip can mean a missed deadline or a wrong date on a booking.</p>
+<p>I built Orbitika's Date Difference tool to take that job off your hands. You pick two dates, tap one button and get the answer. As a solo developer building for older and often-offline phones, I wanted it to be simple, fast and independent of any connection, so there is no account, no sign-in and no internet needed. It is designed to work without Wi-Fi or mobile data.</p>
+<h2>What it does</h2>
+<ul>
+<li><strong>Pick a start date and an end date</strong> from a date picker. Any date between the years 2000 and 2100 works.</li>
+<li><strong>Swap the dates</strong> with one tap if you picked them the wrong way round.</li>
+<li><strong>Count workdays only</strong> (Monday to Friday) with a single switch.</li>
+<li><strong>Get a clear result.</strong> It shows the number of days, or the number of workdays together with the total days.</li>
+<li><strong>It warns you</strong> if the start date is after the end date, so you do not get a confusing answer.</li>
+</ul>
+<h2>How to read the result</h2>
+<p>With "workdays only" switched off, you see the total number of days between your two dates. For example, 26 October 2026 to 25 December 2026 is 60 days.</p>
+<p>With "workdays only" switched on, you see the number of Monday-to-Friday days, and the total days beside it. The workday count includes both the start date and the end date, while the total is the gap between them. So Monday 26 October to Friday 30 October is 4 days apart but covers 5 workdays. In the example above, from Monday 26 October to Friday 25 December 2026 there are 45 workdays.</p>
+<h2>Real situations where it helps</h2>
+<ul>
+<li><strong>Return and refund windows.</strong> Shops often give 14 or 30 days. Find out exactly which date the window closes.</li>
+<li><strong>Deadlines and notice periods.</strong> Work out how many working days remain before a due date.</li>
+<li><strong>Trips and countdowns.</strong> How many days until a flight, a wedding or the end of term?</li>
+<li><strong>Rentals and bookings.</strong> Check the number of nights or days between check-in and check-out.</li>
+<li><strong>Project planning.</strong> Estimate how many working days a task or a contract covers.</li>
+<li><strong>Leap years.</strong> From 1 February 2028 to 1 March 2028 is 29 days, because 2028 is a leap year, and the tool handles that for you.</li>
+</ul>
+<h2>Honest limits</h2>
+<ul>
+<li><strong>Workdays are Monday to Friday only.</strong> The tool does not subtract public holidays, and it cannot handle weeks with different working days. To allow for holidays, check them in Orbitika's <a href="/blog/holiday-calendar-for-travellers-offline/">Calendar</a> and take them off the count yourself.</li>
+<li><strong>Official deadlines can have their own rules.</strong> For legal, visa or contract dates, check how the rules count days, since some count the first day and others do not.</li>
+</ul>
+<h2>Tips</h2>
+<ol>
+<li>Decide first whether the start day counts, then compare with the tool's total.</li>
+<li>Use the swap button instead of re-picking both dates.</li>
+<li>For international deadlines, check the other country's holidays and the <a href="/blog/convert-time-zones-for-travel-and-calls/">time zone</a> too.</li>
+</ol>
+<h2>Free and part of a bigger toolbox</h2>
+<p>Date Difference is one of Orbitika's 24 free everyday tools. Only the emergency tools are part of Orbitika Premium.</p>
+<p class="meta">More about Orbitika tools: <a href="/blog/retro-calculator-basic-and-scientific-offline/">Calculator</a> &middot; <a href="/blog/holiday-calendar-for-travellers-offline/">Calendar</a> &middot; <a href="/blog/retro-flip-clock-on-your-phone/">Clock</a> &middot; <a href="/blog/days-between-two-dates-and-workdays-calculator/">Date Diff</a> &middot; <a href="/blog/decision-maker-random-picker-app/">Decision Maker</a> &middot; <a href="/blog/offline-unit-converter-for-your-phone/">Converter</a> &middot; <a href="/blog/us-uk-eu-clothing-and-shoe-size-converter/">Size Chart</a> &middot; <a href="/blog/convert-time-zones-for-travel-and-calls/">Timezone</a></p>
+<h2>Try Orbitika</h2>
+<div class="stores">
+<a class="btn" href="https://play.google.com/store/apps/details?id=com.orbitika.app">Get it on Google Play</a>
+<a class="btn alt" href="https://apps.apple.com/app/id6811283048">Download on the App Store</a>
+</div>
+<div class="faq">
+<h2>Frequently asked questions</h2>
+<h3>How do I count the days between two dates?</h3><p>Pick the two dates in Orbitika's Date Difference tool and tap Calculate. It shows the number of days between them, and can count Monday-to-Friday workdays only.</p>
+<h3>Does the tool count public holidays?</h3><p>No. Workdays means Monday to Friday. Public holidays are not subtracted, so check them in the Calendar and take them off yourself.</p>
+<h3>Does it work offline?</h3><p>Yes. It is designed to work without Wi-Fi or mobile data.</p>
+<h3>Is Orbitika's Date Difference tool free?</h3><p>Yes. It is one of the free everyday tools. Only the emergency tools are part of Orbitika Premium.</p>
+</div>
+<p class="meta">More: <a href="/orbitika/">Orbitika facts</a> &middot; <a href="/blog/">all posts</a></p>
+</article>
+
+</main>
+<footer class="site"><div class="wrap">
+<p>Orbitika is made by a solo developer. Questions or feedback: <a href="mailto:studyboosternz@gmail.com">studyboosternz@gmail.com</a></p>
+<p><a href="/orbitika/">About the app</a> &middot; <a href="/blog/">Blog</a> &middot; <a href="https://x.com/orbitika">X (Twitter)</a></p>
+</div></footer>
+</body>
+</html>
