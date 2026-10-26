@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Discount Calculator: Find the Real Price After a Sale, Offline</title>
+<meta name="description" content="Orbitika’s free Discount Calculator shows the final price after a percentage off, or the real discount from an old and new price. Two modes, offline, no sign-up.">
+<link rel="canonical" href="https://orbitika.app/blog/discount-calculator-final-price-and-percentage-off/">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<meta property="og:title" content="Discount Calculator: Find the Real Price After a Sale, Offline">
+<meta property="og:description" content="Orbitika’s free Discount Calculator shows the final price after a percentage off, or the real discount from an old and new price. Two modes, offline, no sign-up.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://orbitika.app/blog/discount-calculator-final-price-and-percentage-off/">
+<meta name="twitter:card" content="summary">
+<link rel="stylesheet" href="/style.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Discount Calculator: Find the Real Price After a Sale, Offline", "datePublished": "2026-10-26", "dateModified": "2026-10-26", "author": {"@type": "Person", "name": "Orbitika developer"}, "mainEntityOfPage": "https://orbitika.app/blog/discount-calculator-final-price-and-percentage-off/"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What does the Discount Calculator do?", "acceptedAnswer": {"@type": "Answer", "text": "It has two modes. Discount % takes an original price and a percentage and gives you the final price and the amount saved. Price Compare takes an old price and a current price and gives you the percentage discount and the amount saved."}}, {"@type": "Question", "name": "Can I use it with any currency?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. The maths is the same in any currency. The saving is shown with a dollar sign, but the numbers work for euros, pounds, rupees or anything else."}}, {"@type": "Question", "name": "Does it add tax or GST?", "acceptedAnswer": {"@type": "Answer", "text": "No. It works on the prices you enter. If tax is added at the checkout, add it to your own sum afterwards."}}, {"@type": "Question", "name": "Can it handle two discounts at once?", "acceptedAnswer": {"@type": "Answer", "text": "Not in one step. Calculate the first discount, then enter the final price as the new original price and apply the second discount."}}, {"@type": "Question", "name": "Is the Discount Calculator free and offline?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. It is one of the free everyday tools and is designed to work without Wi-Fi or mobile data. Only the emergency tools are part of Orbitika Premium."}}]}</script>
+</head>
+<body>
+<header class="site"><div class="wrap">
+<a class="brand" href="/">Orbitika</a>
+<nav><a href="/orbitika/">About the app</a><a href="/blog/">Blog</a></nav>
+</div></header>
+<main class="wrap">
+
+<article>
+<h1>Discount Calculator: Find the Real Price After a Sale, Offline</h1>
+<p class="meta">26 October 2026 &middot; by the developer of Orbitika</p>
+<div class="answer"><p><strong>Short answer:</strong> Orbitika’s Discount Calculator answers two shop questions quickly. In Discount % mode you enter the original price and the percentage off, and it shows the final price and what you save. In Price Compare mode you enter the old and new price, and it shows the real percentage drop. It is designed to work without Wi-Fi or mobile data.</p></div>
+
+<p>Sale signs are designed to make you feel good, not to make the maths easy. “30% off” is simple enough. “Was $84.90, now $61.50” takes a moment. By the time you’ve worked it out in your head, you’ve either lost interest or bought it anyway. I built the Discount Calculator so I could check a price in a couple of taps, standing right there in the aisle.</p>
+
+<h2>What it does</h2>
+<p>The tool is called DISCOUNT CALC, and a toggle at the top switches between two modes: DISCOUNT % and PRICE COMPARE. Each answers a different question you ask in a shop. You fill in the fields, press the big orange Calculate button, and the answer appears in large numbers below.</p>
+
+<h2>Discount %: “What will I actually pay?”</h2>
+<p>You enter the original price and the discount percentage. The result is the final price, shown large, with two figures underneath: YOU SAVE and DISCOUNT.</p>
+<p>For example, a jacket at 249.00 with 30% off comes out at a final price of 174.30. You save 74.70, and the discount line shows 30.0%. The tool rounds to two decimal places, so an item at 19.99 with 15% off shows a final price of 16.99 and a saving of 3.00.</p>
+
+<h2>Price Compare: “Is this really a good deal?”</h2>
+<p>Some shops don’t show a percentage at all. They show the old price crossed out and a new one beside it. Enter the old price and the current price, and the app works out the real percentage drop and the amount you save. The percentage is the large number, with YOU SAVE underneath.</p>
+<p>For example, an old price of 59.90 and a current price of 44.90 is a 25.0% discount, and you save 15.00. A current price of 0 shows 100.0%, which is what a free item should show.</p>
+
+<h2>Spotting a weak “sale”</h2>
+<p>This is where Price Compare earns its place. A tag that says “Big saving!” might turn out to be an old price of 100 and a new price of 92. That’s 8.0%, or 8.00 saved. Still a saving, but not the huge one the sign suggested.</p>
+<p>You can also use it to compare two shops. Enter shop A’s price as the old price and shop B’s as the current price. If A charges 139.00 and B charges 124.00, B is 10.8% cheaper, and you save 15.00 by walking to the other one.</p>
+
+<h2>Two discounts in a row</h2>
+<p>The calculator handles one discount at a time, but stacked offers are easy to do in two steps. Say an item costs 100 and a shop offers “20% off, then another 10% off.” Calculate 20% off first, and you get 80.00. Then use 80.00 as the new original price and take 10% off, which gives a final price of 72.00. That is 28% off in total, not 30%, which is a good reason not to add the percentages together in your head.</p>
+
+<h2>Small details that make it quick</h2>
+<ul>
+<li><strong>Only numbers go in.</strong> The fields accept digits and a decimal point, so a stray letter or symbol can’t get in.</li>
+<li><strong>It tells you when something is wrong.</strong> If a field is empty, or the original price is zero, you’ll see “Invalid input” instead of a wrong answer.</li>
+<li><strong>Switching modes clears everything.</strong> You never carry numbers over from the last item.</li>
+<li><strong>It waits for you.</strong> Nothing is calculated until you press Calculate, and the button gives a small tap of haptic feedback so you know it registered.</li>
+</ul>
+
+<h2>Why it’s offline</h2>
+<p>Like everything in Orbitika, the Discount Calculator is designed to work without Wi-Fi or mobile data. The maths happens on your phone. That matters in the places where you most want a quick answer and often have the worst signal: shopping centres, basement car parks, markets overseas.</p>
+
+<h2>Who it helps</h2>
+<p>Students watching their budget, travellers checking prices abroad, and parents at back-to-school sales will get the most from it. It also helps anyone selling things second-hand. If you’re listing something at 450 and want to see what a 15% drop does, the result is 382.50, and you give up 67.50. And it’s for everyone who has stood in a shop trying to do percentages in their head and quietly given up.</p>
+
+<h2>An honest limit</h2>
+<p>The Discount Calculator is for quick checks, not for invoices. It handles one discount at a time. It doesn’t add tax, GST, shipping or fees, so add those yourself if the price tag doesn’t include them. The saving is shown with a dollar sign, but the maths works the same in any currency. Because results are rounded to the nearest cent, the answer can differ by a cent from a shop’s receipt. And if the current price is higher than the old one in Price Compare, you’ll see a negative result, which simply means the price went up.</p>
+
+<h2>Try it</h2>
+<p>The Discount Calculator is a free tool inside Orbitika, alongside the retro music player, mini-games and 50+ other tools. For other sums, the <a href="/blog/retro-calculator-basic-and-scientific-offline/">Calculator</a> has basic and scientific modes. If you’re shopping abroad, the <a href="/blog/offline-unit-converter-for-your-phone/">Unit Converter</a> and <a href="/blog/us-uk-eu-clothing-and-shoe-size-converter/">Size Chart</a> help when the labels use different units or sizes.</p>
+<p class="meta">More about Orbitika tools: <a href="/blog/retro-calculator-basic-and-scientific-offline/">Calculator</a> &middot; <a href="/blog/holiday-calendar-for-travellers-offline/">Calendar</a> &middot; <a href="/blog/retro-flip-clock-on-your-phone/">Clock</a> &middot; <a href="/blog/days-between-two-dates-and-workdays-calculator/">Date Diff</a> &middot; <a href="/blog/decision-maker-random-picker-app/">Decision Maker</a> &middot; <a href="/blog/discount-calculator-final-price-and-percentage-off/">Discount Calc</a> &middot; <a href="/blog/offline-drawing-pad-sketch-app/">Drawing Pad</a> &middot; <a href="/blog/offline-unit-converter-for-your-phone/">Converter</a> &middot; <a href="/blog/us-uk-eu-clothing-and-shoe-size-converter/">Size Chart</a> &middot; <a href="/blog/takeaway-ideas-random-dinner-picker-app/">Takeaway Ideas</a> &middot; <a href="/blog/convert-time-zones-for-travel-and-calls/">Timezone</a></p>
+<h2>Try Orbitika</h2>
+<div class="stores">
+<a class="btn" href="https://play.google.com/store/apps/details?id=com.orbitika.app">Get it on Google Play</a>
+<a class="btn alt" href="https://apps.apple.com/app/id6811283048">Download on the App Store</a>
+</div>
+<div class="faq">
+<h2>Frequently asked questions</h2>
+<h3>What does the Discount Calculator do?</h3><p>It has two modes. Discount % takes an original price and a percentage and gives you the final price and the amount saved. Price Compare takes an old price and a current price and gives you the percentage discount and the amount saved.</p>
+<h3>Can I use it with any currency?</h3><p>Yes. The maths is the same in any currency. The saving is shown with a dollar sign, but the numbers work for euros, pounds, rupees or anything else.</p>
+<h3>Does it add tax or GST?</h3><p>No. It works on the prices you enter. If tax is added at the checkout, add it to your own sum afterwards.</p>
+<h3>Can it handle two discounts at once?</h3><p>Not in one step. Calculate the first discount, then enter the final price as the new original price and apply the second discount.</p>
+<h3>Is the Discount Calculator free and offline?</h3><p>Yes. It is one of the free everyday tools and is designed to work without Wi-Fi or mobile data. Only the emergency tools are part of Orbitika Premium.</p>
+</div>
+<p class="meta">More: <a href="/orbitika/">Orbitika facts</a> &middot; <a href="/blog/">all posts</a></p>
+</article>
+
+</main>
+<footer class="site"><div class="wrap">
+<p>Orbitika is made by a solo developer. Questions or feedback: <a href="mailto:studyboosternz@gmail.com">studyboosternz@gmail.com</a></p>
+<p><a href="/orbitika/">About the app</a> &middot; <a href="/blog/">Blog</a> &middot; <a href="https://x.com/orbitika">X (Twitter)</a></p>
+</div></footer>
+</body>
+</html>
