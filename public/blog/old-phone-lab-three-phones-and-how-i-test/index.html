@@ -3,17 +3,17 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Old Phone Lab: meet the three phones and how I test them</title>
-<meta name="description" content="Meet the Old Phone Lab: a Redmi Note 5, Huawei Nova 5T and Nokia 7.2, and the simple method used to test what older phones can still do in 2026.">
+<title>Old Phone Lab: Meet the Three Phones and How I Test Them</title>
+<meta name="description" content="Meet the Old Phone Lab: a Redmi Note 5, Huawei Nova 5T and Nokia 7.2, and the simple, repeatable method I use to test what older phones can still do in 2026.">
 <link rel="canonical" href="https://orbitika.app/blog/old-phone-lab-three-phones-and-how-i-test/">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-<meta property="og:title" content="Old Phone Lab: meet the three phones and how I test them">
-<meta property="og:description" content="Meet the Old Phone Lab: a Redmi Note 5, Huawei Nova 5T and Nokia 7.2, and the simple method used to test what older phones can still do in 2026.">
+<meta property="og:title" content="Old Phone Lab: Meet the Three Phones and How I Test Them">
+<meta property="og:description" content="Meet the Old Phone Lab: a Redmi Note 5, Huawei Nova 5T and Nokia 7.2, and the simple, repeatable method I use to test what older phones can still do in 2026.">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://orbitika.app/blog/old-phone-lab-three-phones-and-how-i-test/">
 <meta name="twitter:card" content="summary">
 <link rel="stylesheet" href="/style.css">
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Old Phone Lab: meet the three phones and how I test them", "datePublished": "2026-10-21", "dateModified": "2026-10-21", "author": {"@type": "Person", "name": "Orbitika developer"}, "mainEntityOfPage": "https://orbitika.app/blog/old-phone-lab-three-phones-and-how-i-test/"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Old Phone Lab: Meet the Three Phones and How I Test Them", "datePublished": "2026-10-21", "dateModified": "2026-10-29", "author": {"@type": "Person", "name": "Orbitika developer"}, "mainEntityOfPage": "https://orbitika.app/blog/old-phone-lab-three-phones-and-how-i-test/"}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What is the Old Phone Lab?", "acceptedAnswer": {"@type": "Answer", "text": "The Old Phone Lab is a small set of older Android phones (a Redmi Note 5, a Huawei Nova 5T and a Nokia 7.2) that I use to test what older hardware can still do in 2026."}}, {"@type": "Question", "name": "How are the tests done?", "acceptedAnswer": {"@type": "Answer", "text": "Each phone is restarted, started at a similar battery level and timed on camera with a visible stopwatch. I measure cold boot, camera to first photo, and how long a heavy app takes to load."}}, {"@type": "Question", "name": "Do you test Orbitika on these phones too?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. I use the same phones to check how Orbitika behaves on older hardware, and I will share those results as well."}}, {"@type": "Question", "name": "Can I trust the numbers?", "acceptedAnswer": {"@type": "Answer", "text": "They are honest measurements from single devices, so they show what happened on my phones. Your phone may differ."}}]}</script>
 </head>
 <body>
@@ -24,31 +24,53 @@
 <main class="wrap">
 
 <article>
-<h1>Old Phone Lab: meet the three phones and how I test them</h1>
-<p class="meta">21 October 2026 &middot; by the developer of Orbitika</p>
-<div class="answer"><p><strong>Short answer:</strong> the Old Phone Lab is my small set of older phones (a Redmi Note 5, a Huawei Nova 5T and a Nokia 7.2) that I use to check what older hardware can still do in 2026. Every test uses the same method: a restarted phone, the same timed tasks and a visible stopwatch.</p></div>
+<h1>Old Phone Lab: Meet the Three Phones and How I Test Them</h1>
+<p class="meta">21 October 2026 &middot; updated 29 October 2026 &middot; by the developer of Orbitika</p>
+<div class="answer"><p><strong>Short answer:</strong> The Old Phone Lab is my small set of older phones (a Redmi Note 5, a Huawei Nova 5T and a Nokia 7.2) that I use to check what older hardware can still do in 2026. Every test uses the same method: a restarted phone, the same timed tasks and a visible stopwatch.</p></div>
+
+<p>Most phone reviews are written on brand-new flagships. But walk into any office, school or family kitchen and count the phones: a lot of them are a few years old. Few reviews cover how those feel to use today, so I decided to find out myself.</p>
+<p>That’s the Old Phone Lab. It’s three older Android phones, one stopwatch and a rule that every test has to be repeatable. I built it for two reasons: to see honestly what older hardware can still do in 2026, and to check that Orbitika behaves well on the phones I made it for.</p>
 
 <h2>The three phones</h2>
-<dl class="facts">
-<dt>Redmi Note 5</dt><dd>Released 2018. Snapdragon 636. Running Android 9.</dd>
-<dt>Huawei Nova 5T</dt><dd>Released 2019. Kirin 980. Running Android 9.</dd>
-<dt>Nokia 7.2</dt><dd>Released 2019. Snapdragon 660. Running Android 11 (near-stock Android).</dd>
-</dl>
+<p>The three come from different brands and use different chips, so the lab isn’t just one phone’s story:</p>
+<ul>
+<li><strong>Redmi Note 5</strong>: released in 2018, Snapdragon 636, running Android 9.</li>
+<li><strong>Huawei Nova 5T</strong>: released in 2019, Kirin 980, running Android 9.</li>
+<li><strong>Nokia 7.2</strong>: released in 2019, Snapdragon 660, running Android 11 (near-stock Android).</li>
+</ul>
+<p>Between them they cover two Android versions and three processors. The Nokia runs near-stock Android, which makes it a useful point of comparison with the other two.</p>
+
 <h2>Why test old phones at all</h2>
-<p>Millions of people still use phones like these, and most app reviews are done on new flagships. I want to know what an older phone can still do in 2026, what feels slow, and what still works well. I also use the phones to check how Orbitika behaves on older hardware.</p>
+<p>Millions of people still use phones like these, and a phone doesn’t stop being useful because a newer one exists. I want to know what an older phone can still do in 2026, what feels slow and what still works well. That is also why Orbitika is built to run on older hardware, down to Android 8.0 on Android and iPhone X and newer on iPhone.</p>
+
 <h2>How I test</h2>
 <p>Every test follows the same simple rules so the numbers can be compared:</p>
 <ol>
-<li><strong>Restart first</strong>, so nothing is cached from earlier.</li>
-<li><strong>Same starting point:</strong> similar battery level and the same network setup, noted each time.</li>
+<li><strong>Restart first.</strong> Nothing is cached from earlier, so each run starts from the same state.</li>
+<li><strong>Same starting point.</strong> A similar battery level and the same network setup, noted each time.</li>
 <li><strong>Timed on camera.</strong> A stopwatch is visible in the video, so you can check my numbers yourself.</li>
-<li><strong>The same few tasks:</strong> cold boot to the home screen, camera to first photo saved, and opening a heavy app to its first loaded screen.</li>
+<li><strong>The same few tasks.</strong> I time a cold boot to the home screen, camera to first photo saved, and opening a heavy app to its first loaded screen.</li>
 <li><strong>No tricks.</strong> I note the Android version and whether anything was changed on the phone.</li>
 </ol>
-<h2>What these tests cannot tell you</h2>
-<p>These are one person's measurements on single devices. Your phone may be faster or slower depending on its age, storage, battery and installed apps. Treat the results as a guide, not a benchmark.</p>
+
+<h2>What each task tells you</h2>
+<ul>
+<li><strong>Cold boot to the home screen</strong> shows how long the phone takes to be usable after a restart, which matters most on a phone you restart to fix problems.</li>
+<li><strong>Camera to first photo saved</strong> captures the moment you actually care about: how long between wanting a photo and having one.</li>
+<li><strong>A heavy app to its first loaded screen</strong> is the everyday test. It combines storage speed, memory and the processor in a single wait you can feel.</li>
+</ul>
+
 <h2>Where the results appear</h2>
-<p>Each test goes up as a short video on <a href="https://x.com/orbitika">X</a> first, then gets a full write-up here with the numbers.</p>
+<p>Each test goes up as a short video on X first, then gets a full write-up here with the numbers. I’m still running my first tests, so the results will arrive one at a time.</p>
+
+<h2>Who it helps</h2>
+<p>Anyone deciding whether to keep an older phone for another year, parents choosing a hand-me-down phone for a child, people curious about whether a model they own is still worth using, and developers who only ever test on new hardware.</p>
+
+<h2>An honest limit</h2>
+<p>These are one person’s measurements on single devices. Your phone may be faster or slower depending on its age, storage, battery and installed apps. Treat the results as a guide, not a benchmark.</p>
+
+<h2>Try it</h2>
+<p>If you have an older phone, Orbitika is built with it in mind. You can read <a href="/blog/why-i-built-orbitika/">why I built it</a>, or see my first practical guide, <a href="/blog/how-to-make-an-old-android-phone-faster/">how to make an old Android phone faster</a>.</p>
 
 <h2>Try Orbitika</h2>
 <div class="stores">

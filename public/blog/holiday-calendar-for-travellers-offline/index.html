@@ -3,18 +3,18 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Why I built a holiday calendar into Orbitika: 11 countries, no internet needed</title>
-<meta name="description" content="Why I built a public holiday calendar into Orbitika: a Today card, upcoming holidays for 11 countries, and offline use, with real examples and who it helps.">
+<title>Holiday Checker: Public Holidays for 11 Countries, Offline (2026 to 2028)</title>
+<meta name="description" content="Orbitika’s Holiday Checker shows whether today is a workday, a weekend or a public holiday, plus the upcoming holidays for 11 countries through 2028. Designed to work without Wi-Fi or mobile data.">
 <link rel="canonical" href="https://orbitika.app/blog/holiday-calendar-for-travellers-offline/">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-<meta property="og:title" content="Why I built a holiday calendar into Orbitika: 11 countries, no internet needed">
-<meta property="og:description" content="Why I built a public holiday calendar into Orbitika: a Today card, upcoming holidays for 11 countries, and offline use, with real examples and who it helps.">
+<meta property="og:title" content="Holiday Checker: Public Holidays for 11 Countries, Offline (2026 to 2028)">
+<meta property="og:description" content="Orbitika’s Holiday Checker shows whether today is a workday, a weekend or a public holiday, plus the upcoming holidays for 11 countries through 2028. Designed to work without Wi-Fi or mobile data.">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://orbitika.app/blog/holiday-calendar-for-travellers-offline/">
 <meta name="twitter:card" content="summary">
 <link rel="stylesheet" href="/style.css">
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Why I built a holiday calendar into Orbitika: 11 countries, no internet needed", "datePublished": "2026-10-24", "dateModified": "2026-10-24", "author": {"@type": "Person", "name": "Orbitika developer"}, "mainEntityOfPage": "https://orbitika.app/blog/holiday-calendar-for-travellers-offline/"}</script>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Which countries does Orbitika's Calendar cover?", "acceptedAnswer": {"@type": "Answer", "text": "New Zealand, Australia, the United Kingdom, the United States, Canada, Germany, South Korea, Japan, Singapore, France and Malaysia."}}, {"@type": "Question", "name": "Does the holiday calendar work offline?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. The holiday dates are built into the app, so it works without Wi-Fi or mobile data."}}, {"@type": "Question", "name": "Which years does it cover?", "acceptedAnswer": {"@type": "Answer", "text": "The holiday data currently covers 2026 and 2027."}}, {"@type": "Question", "name": "Is Orbitika's Calendar free?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. It is one of the free everyday tools. Only the emergency tools are part of Orbitika Premium."}}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Holiday Checker: Public Holidays for 11 Countries, Offline (2026 to 2028)", "datePublished": "2026-10-24", "dateModified": "2026-10-29", "author": {"@type": "Person", "name": "Orbitika developer"}, "mainEntityOfPage": "https://orbitika.app/blog/holiday-calendar-for-travellers-offline/"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Which countries does the Holiday Checker cover?", "acceptedAnswer": {"@type": "Answer", "text": "Eleven: New Zealand, Australia, the United Kingdom, the United States, Canada, Germany, South Korea, Japan, Singapore, France and Malaysia."}}, {"@type": "Question", "name": "Which years are included?", "acceptedAnswer": {"@type": "Answer", "text": "2026, 2027 and 2028. After 2028 the list will show no upcoming holidays."}}, {"@type": "Question", "name": "What does the Today card show?", "acceptedAnswer": {"@type": "Answer", "text": "The date, and either the holiday’s name, “Weekend!” or “Workday”."}}, {"@type": "Question", "name": "Which country does it open on?", "acceptedAnswer": {"@type": "Answer", "text": "The country your phone is set to, if it is one of the eleven. Otherwise it opens on New Zealand."}}, {"@type": "Question", "name": "Does it include regional holidays?", "acceptedAnswer": {"@type": "Answer", "text": "No. It lists national public holidays only."}}, {"@type": "Question", "name": "Does the Holiday Checker work offline?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. The dates are stored inside the app, so it is designed to work without Wi-Fi or mobile data."}}]}</script>
 </head>
 <body>
 <header class="site"><div class="wrap">
@@ -24,47 +24,53 @@
 <main class="wrap">
 
 <article>
-<h1>Why I built a holiday calendar into Orbitika: 11 countries, no internet needed</h1>
-<p class="meta">24 October 2026 &middot; by the developer of Orbitika</p>
-<div class="answer"><p><strong>Short answer:</strong> I built Orbitika's Calendar to tell you in one glance whether today is a workday, a weekend or a public holiday, and what holidays are coming up in 11 countries. The 2026 and 2027 dates are built into the app, so it works without Wi-Fi or mobile data.</p></div>
+<h1>Holiday Checker: Public Holidays for 11 Countries, Offline (2026 to 2028)</h1>
+<p class="meta">24 October 2026 &middot; updated 29 October 2026 &middot; by the developer of Orbitika</p>
+<div class="answer"><p><strong>Short answer:</strong> The Holiday Checker in Orbitika is a free tool that tells you whether today is a workday, a weekend or a public holiday, and lists upcoming public holidays for 11 countries (New Zealand, Australia, the UK, the US, Canada, Germany, South Korea, Japan, Singapore, France and Malaysia). The data covers 2026 to 2028 and is designed to work without Wi-Fi or mobile data.</p></div>
 
-<h2>Why I built it</h2>
-<p>Public holidays catch people out. Banks and offices close, shops change their hours, trains run a different timetable, and a meeting you booked lands on someone else's day off. When you work, study or travel across countries, one quick question comes up again and again: is tomorrow a holiday where I am going, or where they are?</p>
-<p>I built Orbitika's Calendar to answer that quickly. I wanted something that tells you the answer straight away, without signing in, without syncing an account and without needing a signal. As a solo developer building for older phones and for people who are often offline, a simple built-in answer was better than yet another app.</p>
+<p>Nothing ruins a trip like walking up to a closed door. The bank is shut, the shop is shut, the museum is shut, and a local passer-by says kindly, “Ah, it’s a public holiday.” I’ve had that moment, and I wanted a way to avoid it that doesn’t need a signal or a web search.</p>
+<p>The Holiday Checker answers one question: is today a normal day, and when is the next day off? It’s deliberately simple, because it’s something you want to know in five seconds.</p>
+
 <h2>What it does</h2>
+<p>You open the tool (the title bar says HOLIDAY CHECKER) and see a country dropdown at the top. Below it a “Today” card tells you the date and what kind of day it is, and below that is a list of upcoming holidays.</p>
 <ul>
-<li><strong>A "Today" card</strong> at the top tells you whether today is a workday, a weekend or a public holiday, and shows the holiday's name if it is one.</li>
-<li><strong>An upcoming holidays list</strong> shows what is next, in date order.</li>
-<li><strong>A country picker</strong> covers New Zealand, Australia, the United Kingdom, the United States, Canada, Germany, South Korea, Japan, Singapore, France and Malaysia.</li>
-<li><strong>It chooses a country for you</strong> based on your phone's settings, and falls back to New Zealand if it cannot tell.</li>
-<li><strong>The holiday dates are built into the app</strong> for 2026 and 2027, so it works without Wi-Fi or mobile data.</li>
+<li><strong>Today card:</strong> it shows the full date, and one of three results: the name of the holiday if today is one, “Weekend!” if it’s a Saturday or Sunday, or “Workday” otherwise.</li>
+<li><strong>Upcoming holidays:</strong> a list of holidays from today onwards, each with the month, the day and the holiday’s name. If today is a holiday, it’s highlighted with a thicker border.</li>
 </ul>
-<h2>Real examples</h2>
-<p>Here are a few dates from the app, so you can see how it helps:</p>
+
+<h2>11 countries</h2>
+<p>You can choose from New Zealand, Australia, the United Kingdom, the United States, Canada, Germany, South Korea, Japan, Singapore, France and Malaysia. The tool opens on the country your phone is set to, if it’s one of those eleven, and falls back to New Zealand if it isn’t. You can switch country at any time to check a place you’re about to visit.</p>
+
+<h2>Built-in data for 2026, 2027 and 2028</h2>
+<p>The holiday dates are stored inside the app for the years 2026, 2027 and 2028. Each country has its own list. A few examples of what’s in there:</p>
 <ul>
-<li>Labour Day in New Zealand falls on 26 October 2026, and on 25 October 2027.</li>
-<li>Matariki in New Zealand is on 25 June 2027.</li>
-<li>Good Friday in 2027 is on 26 March in New Zealand, Australia and the United Kingdom, followed by Easter Monday on 29 March.</li>
-<li>Australia Day is on 26 January in both 2026 and 2027.</li>
+<li><strong>New Zealand:</strong> Waitangi Day, Good Friday, Easter Monday, ANZAC Day, King’s Birthday, Matariki, Labour Day, Christmas Day and Boxing Day, with observed-day entries where a holiday falls on a weekend.</li>
+<li><strong>United Kingdom:</strong> Easter, the Early May, Spring and Summer Bank Holidays, Christmas Day and Boxing Day.</li>
+<li><strong>United States:</strong> Martin Luther King Jr. Day, Presidents’ Day, Memorial Day, Independence Day, Labor Day, Thanksgiving and Christmas.</li>
+<li><strong>Germany:</strong> Ascension Day, Whit Monday and German Unity Day among others.</li>
 </ul>
-<p>Spotting these a week early is the whole point. It is the difference between a smooth trip and arriving at a closed bank.</p>
+<p>Japan and Malaysia have the longest lists of the eleven, with dozens of dates across the three years.</p>
+
+<h2>Why it’s offline</h2>
+<p>The dates are written into the app rather than downloaded, so the Holiday Checker is designed to work without Wi-Fi or mobile data. There’s no loading and no account. You can check a country from a plane, a train or a hotel with no wi-fi.</p>
+
 <h2>Who it helps</h2>
+<p>Travellers planning around closures, people working with colleagues in other countries, freelancers scheduling deliveries, students on exchange, and anyone who has ever turned up to a shut office. It’s especially handy if you split time between two countries, since you can flip between them in a tap.</p>
+
+<h2>A few tips</h2>
 <ul>
-<li><strong>Travellers.</strong> Check whether shops, transport and attractions will be affected before you book or arrive.</li>
-<li><strong>Remote workers and freelancers.</strong> Avoid scheduling a call on a client's public holiday.</li>
-<li><strong>Students abroad.</strong> Plan deadlines, travel and errands around closures.</li>
-<li><strong>Families in different countries.</strong> Know when relatives have a day off, and when they might be free to talk.</li>
-<li><strong>Anyone planning a trip or a busy week.</strong> Holidays often mean crowds and higher prices.</li>
+<li><strong>Check the destination before you book.</strong> Switch the country and look at the dates you plan to travel.</li>
+<li><strong>Look at the day after too.</strong> Many places close for a long weekend around a holiday.</li>
+<li><strong>Use it with the date tool.</strong> Count the days with <a href="/blog/days-between-two-dates-and-workdays-calculator/">Date Difference</a>, then check the holiday list for anything in between.</li>
+<li><strong>Remember time zones.</strong> A holiday starts at midnight local time. See <a href="/blog/convert-time-zones-for-travel-and-calls/">how to convert time zones</a> for calls.</li>
 </ul>
+
 <h2>An honest limit</h2>
-<p>The holiday data currently covers 2026 and 2027, and the list is kept per country. Regional or local holidays, such as ones that apply only in one state or province, may not appear, so check locally if the date really matters.</p>
-<h2>Tips</h2>
-<ol>
-<li>Check the holidays of both places when you plan a call across countries, then use the <a href="/blog/convert-time-zones-for-travel-and-calls/">Timezone tool</a> to find a sensible hour.</li>
-<li>Look a week ahead before you travel, not on the day.</li>
-<li>Remember that some businesses also close the day before or after a holiday.</li>
-</ol>
-<p class="meta">More about Orbitika tools: <a href="/blog/retro-calculator-basic-and-scientific-offline/">Calculator</a> &middot; <a href="/blog/holiday-calendar-for-travellers-offline/">Calendar</a> &middot; <a href="/blog/retro-flip-clock-on-your-phone/">Clock</a> &middot; <a href="/blog/days-between-two-dates-and-workdays-calculator/">Date Diff</a> &middot; <a href="/blog/decision-maker-random-picker-app/">Decision Maker</a> &middot; <a href="/blog/discount-calculator-final-price-and-percentage-off/">Discount Calc</a> &middot; <a href="/blog/offline-drawing-pad-sketch-app/">Drawing Pad</a> &middot; <a href="/blog/offline-unit-converter-for-your-phone/">Converter</a> &middot; <a href="/blog/us-uk-eu-clothing-and-shoe-size-converter/">Size Chart</a> &middot; <a href="/blog/takeaway-ideas-random-dinner-picker-app/">Takeaway Ideas</a> &middot; <a href="/blog/convert-time-zones-for-travel-and-calls/">Timezone</a></p>
+<p>The Holiday Checker lists national public holidays only. It doesn’t include regional or local ones, such as a provincial anniversary day, and the data stops at the end of 2028, so after that the list will say there are no upcoming holidays. The dates are built into the app, so they’re only as current as your installed version. For an important trip or deadline, confirm the date with a local source as well.</p>
+
+<h2>Try it</h2>
+<p>The Holiday Checker is one of the free tools in Orbitika, alongside the retro music player, mini-games and 50+ other tools.</p>
+<p class="meta">More about Orbitika tools: <a href="/blog/retro-calculator-basic-and-scientific-offline/">Calculator</a> &middot; <a href="/blog/holiday-calendar-for-travellers-offline/">Calendar</a> &middot; <a href="/blog/retro-flip-clock-on-your-phone/">Clock</a> &middot; <a href="/blog/days-between-two-dates-and-workdays-calculator/">Date Diff</a> &middot; <a href="/blog/decision-maker-random-picker-app/">Decision Maker</a> &middot; <a href="/blog/discount-calculator-final-price-and-percentage-off/">Discount Calc</a> &middot; <a href="/blog/offline-drawing-pad-sketch-app/">Drawing Pad</a> &middot; <a href="/blog/emergency-numbers-offline/">Emergency Numbers</a> &middot; <a href="/blog/emergency-sound-alarm-offline/">Emergency Sound</a> &middot; <a href="/blog/first-aid-guide-offline-5-languages/">First Aid Guide</a> &middot; <a href="/blog/must-try-local-food-by-country/">Must-Try Food</a> &middot; <a href="/blog/gift-and-souvenir-checklist-offline/">Gift &amp; Souvenirs</a> &middot; <a href="/blog/must-try-local-food-by-country/">Must-Try Food</a> &middot; <a href="/blog/gift-and-souvenir-checklist-offline/">Gift &amp; Souvenirs</a> &middot; <a href="/blog/offline-unit-converter-for-your-phone/">Converter</a> &middot; <a href="/blog/us-uk-eu-clothing-and-shoe-size-converter/">Size Chart</a> &middot; <a href="/blog/takeaway-ideas-random-dinner-picker-app/">Takeaway Ideas</a> &middot; <a href="/blog/convert-time-zones-for-travel-and-calls/">Timezone</a></p>
 <h2>Try Orbitika</h2>
 <div class="stores">
 <a class="btn" href="https://play.google.com/store/apps/details?id=com.orbitika.app">Get it on Google Play</a>
@@ -72,10 +78,12 @@
 </div>
 <div class="faq">
 <h2>Frequently asked questions</h2>
-<h3>Which countries does Orbitika's Calendar cover?</h3><p>New Zealand, Australia, the United Kingdom, the United States, Canada, Germany, South Korea, Japan, Singapore, France and Malaysia.</p>
-<h3>Does the holiday calendar work offline?</h3><p>Yes. The holiday dates are built into the app, so it works without Wi-Fi or mobile data.</p>
-<h3>Which years does it cover?</h3><p>The holiday data currently covers 2026 and 2027.</p>
-<h3>Is Orbitika's Calendar free?</h3><p>Yes. It is one of the free everyday tools. Only the emergency tools are part of Orbitika Premium.</p>
+<h3>Which countries does the Holiday Checker cover?</h3><p>Eleven: New Zealand, Australia, the United Kingdom, the United States, Canada, Germany, South Korea, Japan, Singapore, France and Malaysia.</p>
+<h3>Which years are included?</h3><p>2026, 2027 and 2028. After 2028 the list will show no upcoming holidays.</p>
+<h3>What does the Today card show?</h3><p>The date, and either the holiday’s name, “Weekend!” or “Workday”.</p>
+<h3>Which country does it open on?</h3><p>The country your phone is set to, if it is one of the eleven. Otherwise it opens on New Zealand.</p>
+<h3>Does it include regional holidays?</h3><p>No. It lists national public holidays only.</p>
+<h3>Does the Holiday Checker work offline?</h3><p>Yes. The dates are stored inside the app, so it is designed to work without Wi-Fi or mobile data.</p>
 </div>
 <p class="meta">More: <a href="/orbitika/">Orbitika facts</a> &middot; <a href="/blog/">all posts</a></p>
 </article>

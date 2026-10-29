@@ -3,18 +3,18 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Why I put a calculator in Orbitika: basic and scientific modes, offline</title>
-<meta name="description" content="Why I built a retro calculator into Orbitika, with basic and scientific modes, haptic keys and offline use, plus who it helps and tips for accurate answers.">
+<title>Retro Calculator: Basic and Scientific Modes in One Offline App</title>
+<meta name="description" content="Orbitika’s Calculator has a Basic mode and a Scientific mode with sin, cos, tan, log, ln, powers, roots and a degrees/radians switch. Designed to work without Wi-Fi or mobile data.">
 <link rel="canonical" href="https://orbitika.app/blog/retro-calculator-basic-and-scientific-offline/">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-<meta property="og:title" content="Why I put a calculator in Orbitika: basic and scientific modes, offline">
-<meta property="og:description" content="Why I built a retro calculator into Orbitika, with basic and scientific modes, haptic keys and offline use, plus who it helps and tips for accurate answers.">
+<meta property="og:title" content="Retro Calculator: Basic and Scientific Modes in One Offline App">
+<meta property="og:description" content="Orbitika’s Calculator has a Basic mode and a Scientific mode with sin, cos, tan, log, ln, powers, roots and a degrees/radians switch. Designed to work without Wi-Fi or mobile data.">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://orbitika.app/blog/retro-calculator-basic-and-scientific-offline/">
 <meta name="twitter:card" content="summary">
 <link rel="stylesheet" href="/style.css">
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Why I put a calculator in Orbitika: basic and scientific modes, offline", "datePublished": "2026-10-24", "dateModified": "2026-10-24", "author": {"@type": "Person", "name": "Orbitika developer"}, "mainEntityOfPage": "https://orbitika.app/blog/retro-calculator-basic-and-scientific-offline/"}</script>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Does Orbitika have a scientific calculator?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Orbitika's Calculator has a Basic mode and a Scientific mode with sin, cos, tan, log, ln, powers, roots, pi, e and parentheses."}}, {"@type": "Question", "name": "Does the calculator work offline?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. It is designed to work without Wi-Fi or mobile data."}}, {"@type": "Question", "name": "How do I switch between degrees and radians?", "acceptedAnswer": {"@type": "Answer", "text": "In Scientific mode, use the DEG/RAD switch. It shows the mode you are currently in, so check it before using sin, cos or tan."}}, {"@type": "Question", "name": "Is Orbitika's calculator free?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. The Calculator is one of the free everyday tools. Only the emergency tools are part of Orbitika Premium."}}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Retro Calculator: Basic and Scientific Modes in One Offline App", "datePublished": "2026-10-24", "dateModified": "2026-10-29", "author": {"@type": "Person", "name": "Orbitika developer"}, "mainEntityOfPage": "https://orbitika.app/blog/retro-calculator-basic-and-scientific-offline/"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What modes does Orbitika’s Calculator have?", "acceptedAnswer": {"@type": "Answer", "text": "Two: Basic and Scientific. Switching between them clears the current calculation."}}, {"@type": "Question", "name": "Does the Scientific mode have sin, cos and tan?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, along with log, ln, squares, cubes, square and cube roots, 1/x and pi. A RAD/DEG key switches between radians and degrees, and it starts in radians."}}, {"@type": "Question", "name": "Does it follow the order of operations?", "acceptedAnswer": {"@type": "Answer", "text": "No. It works one step at a time from left to right, like a classic pocket calculator, so 2 + 3 × 4 gives 20."}}, {"@type": "Question", "name": "What happens if I divide by zero?", "acceptedAnswer": {"@type": "Answer", "text": "The display shows Error."}}, {"@type": "Question", "name": "Does the Calculator work offline?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. It is designed to work without Wi-Fi or mobile data."}}]}</script>
 </head>
 <body>
 <header class="site"><div class="wrap">
@@ -24,37 +24,59 @@
 <main class="wrap">
 
 <article>
-<h1>Why I put a calculator in Orbitika: basic and scientific modes, offline</h1>
-<p class="meta">24 October 2026 &middot; by the developer of Orbitika</p>
-<div class="answer"><p><strong>Short answer:</strong> I built Orbitika's Calculator so people on older phones can have a clear, quick calculator inside one app, with no subscription and no internet needed. It has a Basic mode for everyday sums and a Scientific mode with trigonometry, logs, powers, roots, pi and parentheses.</p></div>
+<h1>Retro Calculator: Basic and Scientific Modes in One Offline App</h1>
+<p class="meta">24 October 2026 &middot; updated 29 October 2026 &middot; by the developer of Orbitika</p>
+<div class="answer"><p><strong>Short answer:</strong> The Calculator in Orbitika is a free tool with two modes. Basic does the four operations, percent, sign change and backspace. Scientific adds sin, cos, tan with a RAD/DEG switch, log, ln, squares, cubes, roots, 1/x and pi. It is designed to work without Wi-Fi or mobile data.</p></div>
 
-<h2>Why I built it</h2>
-<p>Almost every phone already has a calculator, so adding another one needs a reason. Mine is simple. I am a solo developer, and I built Orbitika to be one small app that covers the everyday jobs on a phone, so that people do not need a separate app for each one. That matters most on older phones, where every extra app takes storage and memory.</p>
-<p>I also wanted the calculator to feel like the rest of Orbitika: retro, easy to read at a glance, and quick to open. The digits are large, the buttons are clear, and each key press gives a small tap of haptic feedback, so you can feel that the press registered. It does not need an account, a subscription or an internet connection, and it is designed to work without Wi-Fi or mobile data.</p>
-<h2>Two modes, on purpose</h2>
-<p>I kept it to two modes, because a calculator should not make you hunt for a button.</p>
-<h3>Basic mode</h3>
-<p>Basic mode has what most people need every day: the four operations (add, subtract, multiply, divide), decimals, a percent key, a plus/minus key to flip the sign, and a clear key. If you divide by zero, it shows "Error" instead of a confusing number.</p>
-<h3>Scientific mode</h3>
-<p>Switch to Scientific and the layout changes. You get sin, cos and tan, a DEG/RAD switch, log and ln, square (x&sup2;), cube (x&sup3;), square root, cube root, 1/x, the constants pi and e, parentheses and a backspace key. It covers what school, college and most DIY maths ask for.</p>
-<h2>Who it helps</h2>
+<p>Here’s a small test of how much we trust our phones: how many times have you opened a browser just to add up some numbers, then waited for a page full of ads to load? I wanted the opposite. A calculator that opens instantly, looks like the pocket calculators I grew up with, and doesn’t need a signal.</p>
+<p>So Orbitika’s Calculator has two modes, Basic and Scientific, on purpose. Most days you only need the first. When you need the second, it’s one tap away.</p>
+
+<h2>What it does</h2>
+<p>You open the tool and see a large display and a keypad. At the top are two buttons, BASIC and SCI. The title bar changes with the mode: it says CALCULATOR in Basic and SCIENTIFIC in Scientific. Switching modes clears the calculation, so you always start from a clean screen. Every key press gives a light vibration, and keys dim briefly while you press them, so the buttons feel like real ones.</p>
+
+<h2>Basic mode</h2>
+<p>The Basic keypad has digits 0 to 9 and a decimal point, the four operations (÷, ×, −, +), an equals key, and three helpers:</p>
 <ul>
-<li><strong>Students.</strong> Trigonometry, logarithms and powers are all in one place, and the DEG/RAD switch matters: sin of 30 is 0.5 in degrees but about -0.99 in radians. Always check which mode the switch shows before you trust a trig answer.</li>
-<li><strong>Shoppers.</strong> Percentages come up all the time. A 15 percent tip on a 48 bill is 7.20, and 20 percent off an 85 item takes 17 off the price.</li>
-<li><strong>DIY and craft.</strong> Squares and square roots help with floor areas, diagonals and cutting lists. For example, a right-angled corner with sides of 3 and 4 has a diagonal of 5.</li>
-<li><strong>Travellers.</strong> Quick sums on the road, such as splitting a bill or estimating costs in another currency, without needing a signal.</li>
-<li><strong>People on older phones.</strong> If your phone's own calculator is missing, slow or cluttered, this one is part of an app you may already use for other things.</li>
+<li><strong>C</strong> clears everything.</li>
+<li><strong>±</strong> flips a number between positive and negative.</li>
+<li><strong>%</strong> divides the number on screen by 100, so 50 becomes 0.5.</li>
 </ul>
-<h2>Tips for getting accurate answers</h2>
-<ol>
-<li><strong>Check the DEG/RAD switch</strong> before any sin, cos or tan calculation.</li>
-<li><strong>Use parentheses</strong> in longer sums so the order of operations is clear.</li>
-<li><strong>Round at the end,</strong> not in the middle of a calculation.</li>
-<li><strong>Use the backspace key</strong> instead of clearing everything when you mistype one digit.</li>
-</ol>
-<h2>Free and part of a bigger toolbox</h2>
-<p>The Calculator is one of Orbitika's 24 free everyday tools. Only the emergency tools are part of Orbitika Premium. If you often switch between calculating and converting, you may also like the <a href="/blog/offline-unit-converter-for-your-phone/">Converter</a>, which handles length, weight, temperature and storage.</p>
-<p class="meta">More about Orbitika tools: <a href="/blog/retro-calculator-basic-and-scientific-offline/">Calculator</a> &middot; <a href="/blog/holiday-calendar-for-travellers-offline/">Calendar</a> &middot; <a href="/blog/retro-flip-clock-on-your-phone/">Clock</a> &middot; <a href="/blog/days-between-two-dates-and-workdays-calculator/">Date Diff</a> &middot; <a href="/blog/decision-maker-random-picker-app/">Decision Maker</a> &middot; <a href="/blog/discount-calculator-final-price-and-percentage-off/">Discount Calc</a> &middot; <a href="/blog/offline-drawing-pad-sketch-app/">Drawing Pad</a> &middot; <a href="/blog/offline-unit-converter-for-your-phone/">Converter</a> &middot; <a href="/blog/us-uk-eu-clothing-and-shoe-size-converter/">Size Chart</a> &middot; <a href="/blog/takeaway-ideas-random-dinner-picker-app/">Takeaway Ideas</a> &middot; <a href="/blog/convert-time-zones-for-travel-and-calls/">Timezone</a></p>
+<p>A small line above the main display shows the calculation as you go, so you can see what you’ve done before you trust the answer.</p>
+
+<h2>Scientific mode</h2>
+<p>Scientific mode keeps the same digits and operations and adds a block of function keys on top, plus a <strong>⌫</strong> backspace key that removes the last digit you typed:</p>
+<ul>
+<li><strong>sin, cos, tan</strong> for trigonometry, with a <strong>RAD/DEG</strong> key that switches between radians and degrees. The key shows the mode you are in, and the calculator starts in radians.</li>
+<li><strong>log</strong> (base 10) and <strong>ln</strong> (natural log).</li>
+<li><strong>x², x³, √ and ∛</strong> for squares, cubes, square roots and cube roots.</li>
+<li><strong>1/x</strong> for reciprocals.</li>
+<li><strong>π</strong> to insert the value of pi.</li>
+</ul>
+<p>The function keys work on the number currently on the display. Type 16, press √, and you get 4, with the line above showing “√(16)”. To check an angle, make sure the RAD/DEG key shows the mode you want first, then type the angle and press sin, cos or tan.</p>
+
+<h2>How results are shown</h2>
+<p>Whole numbers up to just under a trillion appear in full, without a trailing “.0”. Very long decimals switch to exponent notation so they fit on the screen. If something can’t be calculated, such as dividing by zero, the display says Error instead of a nonsense number.</p>
+
+<h2>Why it’s offline</h2>
+<p>The Calculator is designed to work without Wi-Fi or mobile data. All the maths is done on the phone, so it works on a plane, in an exam room or in a basement car park. It also needs very little from the phone, which is helpful on an older device.</p>
+
+<h2>Who it helps</h2>
+<p>Students who need sin, cos and logs for homework, shoppers working out totals, anyone splitting a bill, tradespeople doing quick sums, and travellers who don’t want to rely on a web calculator abroad.</p>
+
+<h2>A few tips</h2>
+<ul>
+<li><strong>Check RAD or DEG before any trig.</strong> It’s the most common cause of “wrong” answers, because sin(90) is very different in each mode.</li>
+<li><strong>Read the line above the display.</strong> It shows what the calculator thinks you asked.</li>
+<li><strong>Use ± instead of retyping.</strong> It flips the sign of the number on screen.</li>
+<li><strong>Use % as a quick divide by 100.</strong> It’s handy for turning a percentage into a decimal.</li>
+</ul>
+
+<h2>An honest limit</h2>
+<p>This calculator works the way a classic pocket calculator does: one step at a time, left to right. That means it doesn’t apply the usual order of operations. If you type 2 + 3 × 4, it works out 2 + 3 first and then multiplies by 4, giving 20, where a calculator that follows order of operations would give 14. For longer calculations, work through the parts in the order you want them done. It also isn’t a graphing or programmable calculator.</p>
+
+<h2>Try it</h2>
+<p>The Calculator is one of the free tools inside Orbitika, alongside the retro music player, mini-games and 50+ other tools. For specific jobs, see the <a href="/blog/discount-calculator-final-price-and-percentage-off/">Discount Calculator</a> and the <a href="/blog/days-between-two-dates-and-workdays-calculator/">Date Difference</a> tool.</p>
+<p class="meta">More about Orbitika tools: <a href="/blog/retro-calculator-basic-and-scientific-offline/">Calculator</a> &middot; <a href="/blog/holiday-calendar-for-travellers-offline/">Calendar</a> &middot; <a href="/blog/retro-flip-clock-on-your-phone/">Clock</a> &middot; <a href="/blog/days-between-two-dates-and-workdays-calculator/">Date Diff</a> &middot; <a href="/blog/decision-maker-random-picker-app/">Decision Maker</a> &middot; <a href="/blog/discount-calculator-final-price-and-percentage-off/">Discount Calc</a> &middot; <a href="/blog/offline-drawing-pad-sketch-app/">Drawing Pad</a> &middot; <a href="/blog/emergency-numbers-offline/">Emergency Numbers</a> &middot; <a href="/blog/emergency-sound-alarm-offline/">Emergency Sound</a> &middot; <a href="/blog/first-aid-guide-offline-5-languages/">First Aid Guide</a> &middot; <a href="/blog/must-try-local-food-by-country/">Must-Try Food</a> &middot; <a href="/blog/gift-and-souvenir-checklist-offline/">Gift &amp; Souvenirs</a> &middot; <a href="/blog/must-try-local-food-by-country/">Must-Try Food</a> &middot; <a href="/blog/gift-and-souvenir-checklist-offline/">Gift &amp; Souvenirs</a> &middot; <a href="/blog/offline-unit-converter-for-your-phone/">Converter</a> &middot; <a href="/blog/us-uk-eu-clothing-and-shoe-size-converter/">Size Chart</a> &middot; <a href="/blog/takeaway-ideas-random-dinner-picker-app/">Takeaway Ideas</a> &middot; <a href="/blog/convert-time-zones-for-travel-and-calls/">Timezone</a></p>
 <h2>Try Orbitika</h2>
 <div class="stores">
 <a class="btn" href="https://play.google.com/store/apps/details?id=com.orbitika.app">Get it on Google Play</a>
@@ -62,10 +84,11 @@
 </div>
 <div class="faq">
 <h2>Frequently asked questions</h2>
-<h3>Does Orbitika have a scientific calculator?</h3><p>Yes. Orbitika's Calculator has a Basic mode and a Scientific mode with sin, cos, tan, log, ln, powers, roots, pi, e and parentheses.</p>
-<h3>Does the calculator work offline?</h3><p>Yes. It is designed to work without Wi-Fi or mobile data.</p>
-<h3>How do I switch between degrees and radians?</h3><p>In Scientific mode, use the DEG/RAD switch. It shows the mode you are currently in, so check it before using sin, cos or tan.</p>
-<h3>Is Orbitika's calculator free?</h3><p>Yes. The Calculator is one of the free everyday tools. Only the emergency tools are part of Orbitika Premium.</p>
+<h3>What modes does Orbitika’s Calculator have?</h3><p>Two: Basic and Scientific. Switching between them clears the current calculation.</p>
+<h3>Does the Scientific mode have sin, cos and tan?</h3><p>Yes, along with log, ln, squares, cubes, square and cube roots, 1/x and pi. A RAD/DEG key switches between radians and degrees, and it starts in radians.</p>
+<h3>Does it follow the order of operations?</h3><p>No. It works one step at a time from left to right, like a classic pocket calculator, so 2 + 3 × 4 gives 20.</p>
+<h3>What happens if I divide by zero?</h3><p>The display shows Error.</p>
+<h3>Does the Calculator work offline?</h3><p>Yes. It is designed to work without Wi-Fi or mobile data.</p>
 </div>
 <p class="meta">More: <a href="/orbitika/">Orbitika facts</a> &middot; <a href="/blog/">all posts</a></p>
 </article>
