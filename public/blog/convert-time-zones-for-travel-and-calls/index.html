@@ -3,18 +3,18 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>How to convert time zones for travel and international calls</title>
-<meta name="description" content="How to convert time zones by hand, which offsets catch people out (India, New Zealand, Europe, US), plus Orbitika's free Timezone tool for travel and calls.">
+<title>Timezone: See the Current Time in 56 Places at Once, Offline</title>
+<meta name="description" content="Orbitika’s Timezone tool shows the current time and date in 56 countries and territories, with a 12-hour or 24-hour switch and a quick list of every place. Free, designed to work without Wi-Fi or mobile data.">
 <link rel="canonical" href="https://orbitika.app/blog/convert-time-zones-for-travel-and-calls/">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-<meta property="og:title" content="How to convert time zones for travel and international calls">
-<meta property="og:description" content="How to convert time zones by hand, which offsets catch people out (India, New Zealand, Europe, US), plus Orbitika's free Timezone tool for travel and calls.">
+<meta property="og:title" content="Timezone: See the Current Time in 56 Places at Once, Offline">
+<meta property="og:description" content="Orbitika’s Timezone tool shows the current time and date in 56 countries and territories, with a 12-hour or 24-hour switch and a quick list of every place. Free, designed to work without Wi-Fi or mobile data.">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://orbitika.app/blog/convert-time-zones-for-travel-and-calls/">
 <meta name="twitter:card" content="summary">
 <link rel="stylesheet" href="/style.css">
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "How to convert time zones for travel and international calls", "datePublished": "2026-10-24", "dateModified": "2026-10-24", "author": {"@type": "Person", "name": "Orbitika developer"}, "mainEntityOfPage": "https://orbitika.app/blog/convert-time-zones-for-travel-and-calls/"}</script>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "How do I convert time zones?", "acceptedAnswer": {"@type": "Answer", "text": "Convert the known time to UTC by subtracting its offset, then add the other place's offset. Check for daylight saving time and for a date change."}}, {"@type": "Question", "name": "Does India have daylight saving time?", "acceptedAnswer": {"@type": "Answer", "text": "No. India uses UTC+5:30 all year."}}, {"@type": "Question", "name": "What is the time difference between New Zealand and India?", "acceptedAnswer": {"@type": "Answer", "text": "New Zealand is 6.5 hours ahead of India during standard time and 7.5 hours ahead during New Zealand's daylight saving time."}}, {"@type": "Question", "name": "Does Orbitika have a timezone converter?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. The Timezone tool converts time across the world and is one of Orbitika's free everyday tools."}}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Timezone: See the Current Time in 56 Places at Once, Offline", "datePublished": "2026-10-24", "dateModified": "2026-11-01", "author": {"@type": "Person", "name": "Orbitika developer"}, "mainEntityOfPage": "https://orbitika.app/blog/convert-time-zones-for-travel-and-calls/"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "How many places does the Timezone tool cover?", "acceptedAnswer": {"@type": "Answer", "text": "Fifty-six countries and territories, from Argentina to Vietnam, including Hawaii, Puerto Rico and Samoa."}}, {"@type": "Question", "name": "What does it show for each place?", "acceptedAnswer": {"@type": "Answer", "text": "The current time, the date, the country and city, and the UTC offset, with a 12H/24H switch."}}, {"@type": "Question", "name": "Does it handle daylight saving?", "acceptedAnswer": {"@type": "Answer", "text": "The time shown follows each place’s real clocks, including daylight saving. The small UTC label shows the standard offset and does not change."}}, {"@type": "Question", "name": "Does it work out the time difference from my time?", "acceptedAnswer": {"@type": "Answer", "text": "No. It shows the time in the other place, and you compare it with your own."}}, {"@type": "Question", "name": "Does Timezone work offline?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. It uses your phone’s clock and stored time-zone data, and is designed to work without Wi-Fi or mobile data."}}]}</script>
 </head>
 <body>
 <header class="site"><div class="wrap">
@@ -24,43 +24,53 @@
 <main class="wrap">
 
 <article>
-<h1>How to convert time zones for travel and international calls</h1>
-<p class="meta">24 October 2026 &middot; by the developer of Orbitika</p>
-<div class="answer"><p><strong>Short answer:</strong> to convert a time zone, subtract the starting place's UTC offset to get UTC, then add the other place's offset, and check for daylight saving time. Orbitika's free Timezone tool does the conversion for you.</p></div>
+<h1>Timezone: See the Current Time in 56 Places at Once, Offline</h1>
+<p class="meta">24 October 2026 &middot; updated 1 November 2026 &middot; by the developer of Orbitika</p>
+<div class="answer"><p><strong>Short answer:</strong> Timezone is a free tool inside Orbitika. Pick a country from the dropdown and it shows the current time and date there, with the UTC offset and a 12H/24H switch, plus a Quick Reference list with the time in every other place. It uses the phone’s built-in clock and is designed to work without Wi-Fi or mobile data.</p></div>
 
-<h2>What Orbitika's Timezone tool does</h2>
-<p>The Timezone tool converts time across the world. It is one of Orbitika's free everyday tools, useful for calls, travel and anything that happens at a set time in another country.</p>
-<h2>How to convert a time zone by hand</h2>
-<ol>
-<li>Find each place's offset from UTC (Coordinated Universal Time).</li>
-<li>Convert the time you know to UTC by subtracting that place's offset.</li>
-<li>Add the other place's offset to get their local time.</li>
-<li>Check whether either place is on daylight saving time, and whether the date changes.</li>
-</ol>
-<p><strong>Example:</strong> 9:00 am in India is UTC+5:30, so it is 3:30 am UTC. In Germany in summer (UTC+2) that is 5:30 am, and in winter (UTC+1) it is 4:30 am.</p>
-<h2>Offsets that catch people out</h2>
+<p>It’s 11 at night and you’re wondering whether it’s too late to call your sister. It’s lunchtime for you, but you have no idea whether your colleague in another country is asleep. Every time zone question has the same shape: “what time is it <em>there</em> right now?”, and the answer you want is one glance, not a calculation.</p>
+<p>That’s what Timezone is for. It doesn’t plan meetings or convert hours. It simply shows you the current time in another place, and in lots of places at once, so you can see whether it’s a good moment to call.</p>
+
+<h2>What it does</h2>
+<p>You open the tool (the title bar says TIMEZONE) and see a dropdown of places. Each is shown as the country and its city, like “Japan (Tokyo)” or “United Kingdom (London)”. Choose one and the screen shows:</p>
 <ul>
-<li><strong>India</strong> is UTC+5:30 all year, with no daylight saving time. Nepal is UTC+5:45.</li>
-<li><strong>New Zealand</strong> is UTC+12 in winter and UTC+13 during daylight saving time. That makes it 6.5 hours ahead of India for part of the year and 7.5 hours ahead for the rest.</li>
-<li><strong>Central Europe</strong> is UTC+1 in winter and UTC+2 in summer.</li>
-<li><strong>The US and Europe</strong> change their clocks on different dates, so for a few weeks each year the time gap between them is an hour different from usual.</li>
-<li><strong>Half-hour and 45-minute zones</strong> exist, so do not assume whole hours.</li>
+<li>the current time there in large digits, updating every second,</li>
+<li>the date, for example “Sunday, 1 Nov 2026”,</li>
+<li>the country and city, and</li>
+<li>the UTC offset, such as UTC+9:00 for Tokyo or UTC+5:30 for New Delhi.</li>
 </ul>
-<h2>When it is useful</h2>
+<p>A small <strong>12H/24H</strong> button switches the display between 12-hour time with AM/PM and 24-hour time. The tool opens on New Zealand.</p>
+
+<h2>The Quick Reference list</h2>
+<p>Below the main clock is a QUICK REFERENCE section: a list of every place in the tool with its current time next to it. You can scan it to see who’s awake, or tap any row to make it the main clock. It’s the fastest way to answer “what time is it everywhere?” without opening the dropdown 20 times.</p>
+
+<h2>56 places</h2>
+<p>The list covers 56 countries and territories, including Argentina, Australia, Austria, Belgium, Brazil, Canada, Chile, China, Colombia, Costa Rica, Croatia, Cuba, Denmark, the Dominican Republic, Egypt, Fiji, Finland, France, Germany, Greece, Hawaii, Hong Kong, Iceland, India, Indonesia, Ireland, Italy, Japan, Kenya, Malaysia, Mexico, Morocco, the Netherlands, New Zealand, Norway, Peru, the Philippines, Poland, Portugal, Puerto Rico, Russia, Samoa, Singapore, South Africa, South Korea, Spain, Sweden, Switzerland, Taiwan, Tanzania, Thailand, Turkey, the UAE, the United Kingdom, the United States and Vietnam.</p>
+<p>Each place uses one city’s time zone. Countries that span several zones show their best-known city: the United States uses New York, Canada uses Toronto, Australia uses Sydney, Brazil uses São Paulo and Russia uses Moscow.</p>
+
+<h2>Daylight saving is handled for you</h2>
+<p>The clock for each place comes from the phone’s time-zone data, which includes daylight saving rules. That means the time shown follows each place’s real clocks as they change during the year. The one thing to know is that the small UTC label comes from a fixed list, so it shows the standard offset and doesn’t move when daylight saving starts. If a place has just changed its clocks, trust the time on the screen over the label.</p>
+
+<h2>Why it’s offline</h2>
+<p>Timezone is designed to work without Wi-Fi or mobile data. It uses your phone’s own clock and the time-zone data stored with the app, so there’s nothing to download and no account. It works on a plane, in a taxi or in a hotel with a weak connection.</p>
+
+<h2>Who it helps</h2>
+<p>Travellers working out what time it is back home, people with family or friends overseas, remote workers and freelancers with clients abroad, students on exchange, and anyone watching a live event in another time zone.</p>
+
+<h2>A few tips</h2>
 <ul>
-<li>Calling family or friends in another country.</li>
-<li>Remote work and meetings across regions.</li>
-<li>Planning a trip and checking jet lag.</li>
-<li>Live events, sports, launches and online games that start at one set time.</li>
+<li><strong>Scan the Quick Reference before you call.</strong> You’ll see in one list who’s likely to be asleep.</li>
+<li><strong>Switch to 24H for planning.</strong> It avoids AM/PM mix-ups when you’re comparing times.</li>
+<li><strong>Check the date, not only the time.</strong> Across the Pacific it can already be tomorrow.</li>
+<li><strong>Pair it with the holiday list.</strong> Before you schedule anything, check whether it’s a <a href="/blog/holiday-calendar-for-travellers-offline/">public holiday</a> over there.</li>
 </ul>
-<h2>Tips</h2>
-<ul>
-<li><strong>Use the 24-hour clock</strong> when scheduling, to avoid am and pm mistakes.</li>
-<li><strong>Include the date and time zone</strong> when you invite someone, for example "Friday 14:00 UTC".</li>
-<li><strong>Check the date,</strong> because a late evening in one country is already the next day in another.</li>
-<li><strong>Double-check near clock changes,</strong> the weeks when daylight saving starts or ends.</li>
-</ul>
-<p class="meta">More free Orbitika tools: <a href="/blog/offline-unit-converter-for-your-phone/">Converter</a> &middot; <a href="/blog/us-uk-eu-clothing-and-shoe-size-converter/">Size Chart</a> &middot; <a href="/blog/convert-time-zones-for-travel-and-calls/">Timezone</a></p>
+
+<h2>An honest limit</h2>
+<p>Timezone shows the time in another place; it does not work out the difference from your own time or suggest a meeting time, so you do that comparison yourself. Each country shows one city, so for large countries with several zones, use the city that matches where your contact actually lives. And the UTC label shows the standard offset even when a place is on daylight saving time.</p>
+
+<h2>Try it</h2>
+<p>Timezone is one of the free tools in Orbitika, alongside the retro music player, mini-games and 50+ other tools. Its flip-style neighbour is the <a href="/blog/retro-flip-clock-on-your-phone/">Clock</a>.</p>
+<p class="meta">More about Orbitika tools: <a href="/blog/retro-calculator-basic-and-scientific-offline/">Calculator</a> &middot; <a href="/blog/holiday-calendar-for-travellers-offline/">Calendar</a> &middot; <a href="/blog/retro-flip-clock-on-your-phone/">Clock</a> &middot; <a href="/blog/days-between-two-dates-and-workdays-calculator/">Date Diff</a> &middot; <a href="/blog/decision-maker-random-picker-app/">Decision Maker</a> &middot; <a href="/blog/discount-calculator-final-price-and-percentage-off/">Discount Calc</a> &middot; <a href="/blog/offline-drawing-pad-sketch-app/">Drawing Pad</a> &middot; <a href="/blog/emergency-numbers-offline/">Emergency Numbers</a> &middot; <a href="/blog/emergency-sound-alarm-offline/">Emergency Sound</a> &middot; <a href="/blog/first-aid-guide-offline-5-languages/">First Aid Guide</a> &middot; <a href="/blog/must-try-local-food-by-country/">Must-Try Food</a> &middot; <a href="/blog/gift-and-souvenir-checklist-offline/">Gift &amp; Souvenirs</a> &middot; <a href="/blog/height-measure-photo-tool-offline/">Height Measure</a> &middot; <a href="/blog/emergency-translator-14-languages-offline/">Emergency Translator</a> &middot; <a href="/blog/lucky-numbers-lottery-picker-offline/">Lucky Numbers</a> &middot; <a href="/blog/horoscope-western-and-chinese-zodiac-offline/">Horoscope</a> &middot; <a href="/blog/daily-walks-tracker-paw-calendar-offline/">Daily Walks</a> &middot; <a href="/blog/must-try-local-food-by-country/">Must-Try Food</a> &middot; <a href="/blog/gift-and-souvenir-checklist-offline/">Gift &amp; Souvenirs</a> &middot; <a href="/blog/height-measure-photo-tool-offline/">Height Measure</a> &middot; <a href="/blog/emergency-translator-14-languages-offline/">Emergency Translator</a> &middot; <a href="/blog/lucky-numbers-lottery-picker-offline/">Lucky Numbers</a> &middot; <a href="/blog/horoscope-western-and-chinese-zodiac-offline/">Horoscope</a> &middot; <a href="/blog/daily-walks-tracker-paw-calendar-offline/">Daily Walks</a> &middot; <a href="/blog/offline-unit-converter-for-your-phone/">Converter</a> &middot; <a href="/blog/us-uk-eu-clothing-and-shoe-size-converter/">Size Chart</a> &middot; <a href="/blog/takeaway-ideas-random-dinner-picker-app/">Takeaway Ideas</a> &middot; <a href="/blog/convert-time-zones-for-travel-and-calls/">Timezone</a></p>
 <h2>Try Orbitika</h2>
 <div class="stores">
 <a class="btn" href="https://play.google.com/store/apps/details?id=com.orbitika.app">Get it on Google Play</a>
@@ -68,10 +78,11 @@
 </div>
 <div class="faq">
 <h2>Frequently asked questions</h2>
-<h3>How do I convert time zones?</h3><p>Convert the known time to UTC by subtracting its offset, then add the other place's offset. Check for daylight saving time and for a date change.</p>
-<h3>Does India have daylight saving time?</h3><p>No. India uses UTC+5:30 all year.</p>
-<h3>What is the time difference between New Zealand and India?</h3><p>New Zealand is 6.5 hours ahead of India during standard time and 7.5 hours ahead during New Zealand's daylight saving time.</p>
-<h3>Does Orbitika have a timezone converter?</h3><p>Yes. The Timezone tool converts time across the world and is one of Orbitika's free everyday tools.</p>
+<h3>How many places does the Timezone tool cover?</h3><p>Fifty-six countries and territories, from Argentina to Vietnam, including Hawaii, Puerto Rico and Samoa.</p>
+<h3>What does it show for each place?</h3><p>The current time, the date, the country and city, and the UTC offset, with a 12H/24H switch.</p>
+<h3>Does it handle daylight saving?</h3><p>The time shown follows each place’s real clocks, including daylight saving. The small UTC label shows the standard offset and does not change.</p>
+<h3>Does it work out the time difference from my time?</h3><p>No. It shows the time in the other place, and you compare it with your own.</p>
+<h3>Does Timezone work offline?</h3><p>Yes. It uses your phone’s clock and stored time-zone data, and is designed to work without Wi-Fi or mobile data.</p>
 </div>
 <p class="meta">More: <a href="/orbitika/">Orbitika facts</a> &middot; <a href="/blog/">all posts</a></p>
 </article>
