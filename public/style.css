@@ -73,3 +73,12 @@ ul.latest small{display:block;font:13px var(--sans);color:#3c4b36;margin-top:2px
   .home-grid{grid-template-columns:1fr;gap:0}
   .home-side{position:static;margin-top:8px}
 }
+
+.badges{font:700 13px var(--mono);margin:12px 0 0!important}
+.cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin:0 0 1.4em}
+.card{background:var(--paper);border:2px solid var(--ink);border-radius:8px;padding:4px 16px 10px}
+.card h3{margin:.8em 0 .4em;font-size:1.05rem}
+.card p{margin:0 0 .6em;font-size:16px;line-height:1.55}
+ul.tight{margin:0 0 .4em;padding-left:1.1em;font-size:16px;line-height:1.45}
+ul.tight li{margin-bottom:.25em}
+@media (max-width:620px){.cards{grid-template-columns:1fr}}
