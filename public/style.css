@@ -57,3 +57,19 @@ footer.site .wrap{padding-top:22px;padding-bottom:30px}
 table.ref{width:100%;border-collapse:collapse;background:var(--paper);border:2px solid var(--ink);font:15px var(--sans)}
 table.ref th,table.ref td{padding:8px 10px;border-bottom:1px solid var(--dot);text-align:left}
 table.ref th{background:var(--panel);font-family:var(--mono)}
+
+/* Homepage: main column + latest posts on the right */
+body.home .wrap{max-width:1040px}
+.home-grid{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:32px;align-items:start}
+.home-side{position:sticky;top:16px;margin-top:28px;background:var(--paper);border:3px solid var(--ink);border-radius:10px;padding:6px 18px 14px;box-shadow:5px 5px 0 var(--ink)}
+.home-side h2{margin:.7em 0 .5em;font-size:1.15rem}
+ul.latest{list-style:none;padding:0;margin:0 0 .6em}
+ul.latest li{margin:0;padding:9px 0;border-bottom:1px solid var(--dot);line-height:1.4}
+ul.latest li:last-child{border-bottom:0}
+ul.latest a{font:700 14px/1.35 var(--mono)}
+ul.latest small{display:block;font:13px var(--sans);color:#3c4b36;margin-top:2px}
+.home-side .all{margin:0;font:700 14px var(--mono)}
+@media (max-width:860px){
+  .home-grid{grid-template-columns:1fr;gap:0}
+  .home-side{position:static;margin-top:8px}
+}

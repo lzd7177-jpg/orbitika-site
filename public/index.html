@@ -14,12 +14,14 @@
 <meta name="twitter:card" content="summary">
 <link rel="stylesheet" href="/style.css">
 </head>
-<body>
+<body class="home">
 <header class="site"><div class="wrap">
 <a class="brand" href="/">Orbitika</a>
 <nav><a href="/orbitika/">About the app</a><a href="/blog/">Blog</a></nav>
 </div></header>
 <main class="wrap">
+<div class="home-grid">
+<div class="home-main">
 
 <section class="lcd">
 <h1>Orbitika<span class="cursor" aria-hidden="true"></span></h1>
@@ -40,10 +42,50 @@
 <p>People with older phones, travelers and students who are often offline, anyone tired of subscription apps, and anyone who misses the MP3 player era.</p>
 <p><a href="/orbitika/">See the full facts</a> or read <a href="/blog/why-i-built-orbitika/">why I built it</a>.</p>
 
+</div>
+<aside class="home-side" aria-label="Latest blog posts">
+<h2>Latest posts</h2>
+<ul class="latest" id="latest">
+<li><a href="/blog/daily-walks-tracker-paw-calendar-offline/">Daily Walks Tracker: A Paw-Print Calendar for the Last 30 Days of Walks</a><small>1 November 2026</small></li>
+<li><a href="/blog/horoscope-western-and-chinese-zodiac-offline/">Horoscope: Find Your Western and Chinese Zodiac Signs from Your Birthday, Offline</a><small>1 November 2026</small></li>
+<li><a href="/blog/lucky-numbers-lottery-picker-offline/">Lucky Numbers: A Random Lottery Number Picker for 16 Countries, Offline</a><small>1 November 2026</small></li>
+<li><a href="/blog/emergency-translator-14-languages-offline/">Emergency Translator: 18 Ready-Made Phrases in 14 Languages, Offline</a><small>29 October 2026</small></li>
+<li><a href="/blog/height-measure-photo-tool-offline/">Height Measure: Estimate Someone’s Height from a Photo, Offline</a><small>29 October 2026</small></li>
+<li><a href="/blog/gift-and-souvenir-checklist-offline/">Gift &amp; Souvenirs: A Simple Offline Checklist for Presents You Still Need to Buy</a><small>29 October 2026</small></li>
+<li><a href="/blog/must-try-local-food-by-country/">Must-Try Food: The Top 10 Local Dishes from 36 Countries, Offline</a><small>29 October 2026</small></li>
+<li><a href="/blog/first-aid-guide-offline-5-languages/">First Aid Guide: Seven Emergencies, Five Languages, No Internet Needed</a><small>29 October 2026</small></li>
+<li><a href="/blog/emergency-sound-alarm-offline/">Emergency Sound: A Siren, a Tsunami Alarm and an Emergency Alarm in Your Pocket</a><small>29 October 2026</small></li>
+<li><a href="/blog/emergency-numbers-offline/">Emergency Numbers: Police, Ambulance and Fire for 50 Countries, Offline</a><small>29 October 2026</small></li>
+</ul>
+<p class="all"><a href="/blog/">All posts &rarr;</a></p>
+</aside>
+</div>
 </main>
 <footer class="site"><div class="wrap">
 <p>Orbitika is made by a solo developer. Questions or feedback: <a href="mailto:studyboosternz@gmail.com">studyboosternz@gmail.com</a></p>
 <p><a href="/orbitika/">About the app</a> &middot; <a href="/blog/">Blog</a> &middot; <a href="https://x.com/orbitika">X (Twitter)</a></p>
 </div></footer>
+<script>
+(function(){
+  try{
+    fetch('/blog/').then(function(r){return r.text();}).then(function(txt){
+      var doc=new DOMParser().parseFromString(txt,'text/html');
+      var rows=doc.querySelectorAll('.post-list li');
+      var ul=document.getElementById('latest');
+      if(!rows.length||!ul)return;
+      var frag=document.createDocumentFragment();
+      for(var i=0;i<rows.length&&i<10;i++){
+        var a=rows[i].querySelector('a'),s=rows[i].querySelector('small');
+        if(!a)continue;
+        var li=document.createElement('li'),link=document.createElement('a');
+        link.href=a.getAttribute('href');link.textContent=a.textContent;li.appendChild(link);
+        if(s){var sm=document.createElement('small');sm.textContent=s.textContent;li.appendChild(sm);}
+        frag.appendChild(li);
+      }
+      if(frag.childNodes.length){ul.innerHTML='';ul.appendChild(frag);}
+    }).catch(function(){});
+  }catch(e){}
+})();
+</script>
 </body>
 </html>
