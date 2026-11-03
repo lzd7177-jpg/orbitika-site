@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://orbitika.app/</loc><lastmod>2026-10-24</lastmod></url>
   <url><loc>https://orbitika.app/orbitika/</loc><lastmod>2026-10-24</lastmod></url>
-  <url><loc>https://orbitika.app/blog/</loc><lastmod>2026-11-02</lastmod></url>
+  <url><loc>https://orbitika.app/blog/</loc><lastmod>2026-11-04</lastmod></url>
   <url><loc>https://orbitika.app/blog/why-i-built-orbitika/</loc><lastmod>2026-10-29</lastmod></url>
   <url><loc>https://orbitika.app/blog/old-phone-lab-three-phones-and-how-i-test/</loc><lastmod>2026-10-29</lastmod></url>
   <url><loc>https://orbitika.app/blog/offline-emergency-tools-on-your-phone/</loc><lastmod>2026-10-29</lastmod></url>
@@ -36,4 +36,10 @@
   <url><loc>https://orbitika.app/blog/birthday-and-anniversary-reminders-offline/</loc><lastmod>2026-11-02</lastmod></url>
   <url><loc>https://orbitika.app/blog/focus-timer-pomodoro-presets-offline/</loc><lastmod>2026-11-02</lastmod></url>
   <url><loc>https://orbitika.app/blog/score-board-keep-score-offline/</loc><lastmod>2026-11-02</lastmod></url>
+  <url><loc>https://orbitika.app/blog/water-tracker-8-glasses-a-day-offline/</loc><lastmod>2026-11-04</lastmod></url>
+  <url><loc>https://orbitika.app/blog/sleep-sounds-nine-offline-ambient-sounds/</loc><lastmod>2026-11-04</lastmod></url>
+  <url><loc>https://orbitika.app/blog/wifi-signal-meter-dbm-offline/</loc><lastmod>2026-11-04</lastmod></url>
+  <url><loc>https://orbitika.app/blog/survival-guide-8-topics-5-languages-offline/</loc><lastmod>2026-11-04</lastmod></url>
+  <url><loc>https://orbitika.app/blog/location-share-copy-gps-coordinates-offline/</loc><lastmod>2026-11-04</lastmod></url>
+  <url><loc>https://orbitika.app/blog/reverse-text-tool-offline/</loc><lastmod>2026-11-04</lastmod></url>
 </urlset>
