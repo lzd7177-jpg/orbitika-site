@@ -82,3 +82,10 @@ ul.latest small{display:block;font:13px var(--sans);color:#3c4b36;margin-top:2px
 ul.tight{margin:0 0 .4em;padding-left:1.1em;font-size:16px;line-height:1.45}
 ul.tight li{margin-bottom:.25em}
 @media (max-width:620px){.cards{grid-template-columns:1fr}}
+
+.cta{background:var(--paper);border:2px solid var(--ink);border-radius:8px;padding:6px 16px 14px;margin:0 0 1.4em}
+.cta p{margin:.6em 0 .4em}
+.tablewrap{overflow-x:auto;margin:0 0 1.2em}
+.tablewrap table{border-collapse:collapse;width:100%;font:15px var(--sans)}
+.tablewrap th,.tablewrap td{border:1px solid var(--ink);padding:6px 10px;text-align:left;white-space:nowrap}
+.tablewrap th{background:var(--paper);font-family:var(--mono)}
